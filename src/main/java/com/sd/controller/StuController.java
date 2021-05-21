@@ -18,6 +18,7 @@ public class StuController {
 
     @RequestMapping("/list")
     public String list(Model model){
+        //
         List<Student> list = stuService.list();
         model.addAttribute("stuList",list);
         return "stuList";
